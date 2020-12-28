@@ -16,11 +16,8 @@ def cleaner(data):
     data1=re.sub('[^a-zA-Z]',' ',data)
     data2=data1.lower()
     data3=data2.strip()
-    data4=nltk.word_tokenize(data3)
-    data5=[i for i in data4 if i not in set(stopwords.words('english'))]
-    data6=[WordNetLemmatizer().lemmatize(i) for i in data5]
-    data7=' '.join(data6)
-    return data7
+    
+    return data3
 
 
 elr=pickle.load(open('elr.pkl','rb'))
