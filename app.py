@@ -9,6 +9,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import StandardScaler
 ss=StandardScaler()
+nltk.download("all")
 
 
 def cleaner(data):
