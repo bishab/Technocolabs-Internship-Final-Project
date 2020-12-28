@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<center>
+	<h1>Reddit Upvotes Predictor!!!</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+    	<b>Enter Your Comment Here: &nbsp&nbsp</b>
+    	<input type="text" name="sentence" placeholder="Enter Your Comment" required="required" /><br><br>
+        <b>How many times did you edit your comment? &nbsp&nbsp</b>
+        <input type="text" name="edit_numbers" placeholder="Input in numbers" required="required" /> <br><br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit Comment</button>
+    </form>
+
+   <br>
+   <br><b>
+   
+{{   values_out }}
+  
+</b>
+ </div>
+
+
+</body>
+</html>
