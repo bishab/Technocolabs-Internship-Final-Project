@@ -5,3 +5,5 @@
 * Preprocessing Modules Used- Scikit-Learn's StandardScaler <br>
 * Deployment Platforms- Flask, Heroku
 
+
+<h2> App Link:     https://reddit-upvotes-predictor.herokuapp.com/ </h2>
